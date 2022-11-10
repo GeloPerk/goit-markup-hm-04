@@ -16,21 +16,29 @@
     <!--topsite-->
     <header class="header">
       <div class="container header__wrap">
-        <a class="header__logo" href="./index.html"
-          >Web<span class="header__accent">Studio</span></a
-        >
+        <a class="header__logo" href="./index.html">Web<span class="header__accent">Studio</span></a>
         <nav class="header__nav">
           <ul class="header__list">
-            <li><a class="header__item" href="#">Студія</a></li>
-            <li><a class="header__item" href="#">Портфоліо</a></li>
+            <li><a class="header__item" href="http://127.0.0.1:5500/index.html#">Студія</a></li>
+            <li>
+              <a class="header__item" href="http://127.0.0.1:5500/portfolio.html">Портфоліо</a>
+            </li>
             <li><a class="header__item" href="#">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header__contact">
-          <li>
+          <li class="header__contact-list">
+            <svg class="icon__header" width="16px" height="12px">
+              <use href="./img/symbol-defs.svg#icon-envelope-hover"></use>
+            </svg>
             <a class="header__contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li><a class="header__contact-item" href="tel:+380961111111">+380961111111</a></li>
+          <li class="header__contact-list">
+            <svg class="icon__header" width="16px" height="12px">
+              <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            <a class="header__contact-item" href="tel:+380961111111">+380961111111</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -58,7 +66,7 @@
             </li>
           </ul>
           <ul class="portfolio__content-list">
-            <li class="portfolio__content-items">#<a href="">
+            <li class="portfolio__content-items"><a href="#">
                             <img width="370" src="img/img.jpg" alt="ноутбуком" />
                             <h3 class="portfolio__content-h3">Технокряк</h3>
                             <p class="portfolio__content-p">Веб-сайт</p>
@@ -119,11 +127,9 @@
 
     <!--низ страницы-->
     <footer class="footer">
-      <div class="container">
-        <a class="footer__title" href="./index.html"
-          >Web <span class="footer__accent">Studio</span></a
-        >
-        <address>
+      <div class="footer__all">
+        <div class="footer__div">
+          <a class="footer__title" href="./index.html">Web <span class="footer__accent">Studio</span></a>
           <ul class="footer__list">
             <li class="footer__items">
               <a id="footer__item" href="#">м. Київ, пр-т Лесі Українки, 26</a>
@@ -133,7 +139,40 @@
             </li>
             <li class="footer__items"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
-        </address>
+        </div>
+        <div class="footer__div">
+          <h2 class="footer__h2">Приєднуйтесь</h2>
+          <ul class="link__list-footer">
+            <li class="link__items-footer">
+              <a class="link__svg-footer" href="">
+                <svg class="icon__massage-footer" width="20px" height="20px">
+                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link__items-footer">
+              <a href="" class="link__svg-footer">
+                <svg class="icon__massage-footer" width="20px" height="20px">
+                  <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link__items-footer">
+              <a href="" class="link__svg-footer">
+                <svg class="icon__massage-footer" width="20px" height="20px">
+                  <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="link__items-footer">
+              <a href="" class="link__svg-footer">
+                <svg class="icon__massage-footer" width="20px" height="20px">
+                  <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
