@@ -28,6 +28,9 @@ body {
   --main-text-color: red;
   --h3-color: red;
 }
+header{
+  border: 1px solid #ECECEC;
+}
 
 /* header */
 
@@ -171,6 +174,7 @@ body {
   height: 50px;
   border: 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 .main__btn:hover{
   color: #2196f3 ;
@@ -331,18 +335,22 @@ align-items: center;
   margin-right: 30px;
 }
 .clients__link{
+width: 170px;
+height: 92px;
+}
+.clients__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px ;
   height: 92px ;
-  border-radius: 50%;
-  color: #AFB1B8;;}
+  color: #AFB1B8;
+border: 2px solid #AFB1B8;
+border-radius: 4px;}
   .icon{ 
-    border: 2px solid;
-    border-radius: 8px;
     fill: currentColor;
-    color: #AFB1B8;
   }
-  .icon:hover{ color: #2196F3;}
-
+  .clients__link:hover, .clients__link:focus{ color: #2196F3; border-color:#2196F3 ;}
 /* footer */
 
 .footer {
@@ -464,6 +472,7 @@ align-items: center;
   top: 174px;
   background: #f5f4fa;
   border: 0;
+  border-radius: 4px;
 }
 .portfolio__btn:hover {
   background: #2196f3;
@@ -492,7 +501,7 @@ align-items: center;
   color: #757575;
   margin: 0;
   margin-bottom: 20px;
-
 }
+.portfolio__content-text{ padding: 20px 24px;}
 .portfolio__content-items:hover
 {box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
